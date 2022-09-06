@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <title>Tip calculator app</title>
+
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/a7a8287e57.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div id="container">
+    <div class="left">
+      <div class="pair1">
+        <label for="billInput" class="labels">Bill</label>
+        <div class="divOnInputs">
+          <small class="wrong"></small>
+          <i class="fa-sharp fa-solid fa-dollar-sign icons"></i>
+          <input type="number" id="bill" class="input-styles" name="billInput" dir="rtl" />
+        </div>
+      </div>
+      <div class="tips">
+        <label class="labels">Select tip %</label>
+        <div class="tips-titles">
+          <button class="tip tip5" value="0.05">
+            <span>5%</span>
+          </button>
+          <button class="tip tip10" value="0.1">
+            <span>10%</span>
+          </button>
+          <button class="tip tip15" value="0.15">
+            <span>15%</span>
+          </button>
+          <button class="tip tip25" value="0.25">
+            <span>25%</span>
+          </button>
+          <button class="tip tip50" value="0.5">
+            <span>50%</span>
+          </button>
+          <input type="number" id="custom-number" class="custom-tip" placeholder="Custom">
+        </div>
+      </div>
+      <div class="pair2">
+        <label for="" class="labels">Number of people</label>
+        <div class="divOnInputs">
+          <small class="wrong"></small>
+          <i class="fa-solid fa-user icons"></i>
+          <input type="number" id="nop" class="input-styles" name="nopInput" dir=rtl />
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="tip-amount">
+        <div class="title">
+          <span>Tip amount<br /><span class="person">/person</span></span>
+        </div>
+        <div class="number">
+          <span>$<span class="sum1">0.00</span></span>
+        </div>
+      </div>
+      <div class="total">
+        <div class="title">
+          <span>Total<br /><span class="person">/person</span></span>
+        </div>
+        <div class="number">
+          <span>$<span class="sum2">0.00</span></span>
+        </div>
+      </div>
+      <button class="reset-button">RESET</button>
+    </div>
+
+
+  </div>
+
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
